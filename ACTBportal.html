@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+body{
+	background-color: yellow;
+}
+
+input{
+	padding-right: 60px;
+}
+
+h1 {
+	color: green;
+	text-align: center;
+	font-family: inherit;
+}
+</style>
+
+</head>
+<body>
+<center>
+<h1> ACTB Connection Portal</h1>
+<form>
+	<table>
+		<tr>
+			<td>Customer Name</td>
+			<td><input type="text" name="Customer Name" placeholder="Enter the customer name"></td>
+		</tr>
+		
+		<tr>
+			<td>Customer Email</td>
+			<td><input type="email" name="Customer Email" placeholder="abc@gmail.com"></td>
+		</tr>
+		
+		<tr>
+			<td>Mobile Number</td>
+			<td><input type="number" name="Mobile Number" placeholder="Enter the mobile number"></td>
+		</tr>
+		
+		<tr>
+		<td>Type of Broadband</td>
+		<td><select name="conntype" id="connectiontype" value="connectiontype" required>
+			<option id="Pre" value="Pre">Pre</option>
+			<option id="Post" value="Post">Post</option>
+		</select></td>
+		</tr>
+		
+		<tr>
+			<td>Scheme Name</td>
+			<td><input type="radio" name="scheme" id="scheme1" value="Local">Local
+			<input type="radio" name="scheme" id="scheme2" value="STD">STD
+			<input type="radio" name="scheme" id="scheme3" value="FullTalkTime">FullTalkTime</td>
+		</tr>
+		
+		<tr>
+			<td>Connection duration</td>
+			<td><input type="number" name="duration" id="duration"></td>
+		</tr>
+		
+		<tr>
+			<td><input type="button" name="submit" value="Calculate the bill" onclick="TotalRental()"></td>
+			<td><input type="button" name="clear" value="Reset"></td>
+		</tr>
+		
+</table>
+
+</form>
+
+<header>Rental Cost Table</header>
+<table border="1">
+	<tr>
+		<td><b>Connection Type</b></td>
+		<td><b>Call Limit</b></td>
+		<td><b>Montly Rental</b></td>
+	</tr>
+	
+	<tr>
+		<td>Pre</td>
+		<td>500</td>
+		<td>75</td>
+	</tr>
+	
+	<tr>
+		<td>Post</td>
+		<td>Unlimited</td>
+		<td>150</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>
